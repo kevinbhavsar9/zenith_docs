@@ -1,0 +1,30 @@
+.right-nav-cont {
+  position: fixed;
+  margin: 10px 0px;
+  right: 0;
+  //   border: 2px solid red;
+  width: 20%;
+  top: 60px;
+  padding: 20px 0px;
+  .top-ul {
+    list-style: none;
+    padding: 0;
+    li {
+      a {
+        color: gray;
+        font-weight: 400;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #1da6da;
+      }
+      ul {
+        list-style: none;
+        padding-left: 25px;
+        li {
+          padding: 5px 0px;
+        }
+      }
+    }
+  }
+}

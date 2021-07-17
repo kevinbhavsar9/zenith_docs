@@ -1,0 +1,47 @@
+.nav-cont {
+  //   border: 2px solid red;
+  display: inline-block;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+
+  h2 {
+    font-weight: 450;
+    color: #444242;
+    margin-left: 20px;
+  }
+
+  .navigator-mainui {
+    color: gray;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 7px 0px;
+      // span:hover {
+      //   cursor: pointer;
+      //   color: rgb(170, 169, 169);
+      // }
+      .dropless {
+        padding-left: 20px;
+      }
+
+      ul {
+        padding-top: 10px;
+        li {
+          list-style: none;
+        }
+        // li:hover {
+        //   cursor: pointer;
+        //   color: rgb(170, 169, 169);
+        // }
+      }
+    }
+    li:hover {
+      cursor: pointer;
+    }
+  }
+}

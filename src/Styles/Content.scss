@@ -1,0 +1,32 @@
+.contente {
+  table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding-top: 40px;
+
+    th {
+      border: 1px solid gray;
+      padding: 20px;
+    }
+    td {
+      border: 1px solid gray;
+      padding: 20px;
+    }
+  }
+
+  // border: 2px solid red;
+  width: 53%;
+  margin-left: 342px;
+  // padding: 20px;
+  padding: 0px 35px;
+  color: gray;
+  line-height: 10px;
+  div {
+    line-height: 31px;
+  }
+  h2 {
+    border-bottom: 0.5px solid #cfcece;
+    padding: 10px 0px;
+    color: #605e5e;
+  }
+}
