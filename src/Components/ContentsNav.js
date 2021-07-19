@@ -7,7 +7,7 @@ class ContentsNav extends Component {
     // console.log(content);
     const { page } = this.props;
     let content = Array.filter((item) => {
-      if (item.mainHead === page) {
+      if (item.url === window.location.pathname) {
         return item;
       }
     });

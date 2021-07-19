@@ -1,5 +1,6 @@
 const content = [
   {
+    url: "/Introduction",
     mainHead: "Introduction",
     subContent: [
       {
@@ -11,6 +12,7 @@ const content = [
     ],
   },
   {
+    url: "/Wallet",
     mainHead: "Wallet",
     subContent: [
       {
@@ -21,6 +23,7 @@ const content = [
     ],
   },
   {
+    url: "/Consensus",
     mainHead: "Consensus",
     subContent: [
       {
@@ -71,6 +74,7 @@ const content = [
     ],
   },
   {
+    url: "/ZcScan",
     mainHead: "ZcScan",
     subContent: [
       {
@@ -81,6 +85,7 @@ const content = [
     ],
   },
   {
+    url: "/Ecosystem",
     mainHead: "Ecosystem",
     subContent: [
       {
@@ -91,6 +96,7 @@ const content = [
     ],
   },
   {
+    url: "/Overview",
     mainHead: "Overview",
     subContent: [
       {
@@ -101,6 +107,7 @@ const content = [
     ],
   },
   {
+    url: "/Genesis",
     mainHead: "Genesis File",
     subContent: [
       {
@@ -126,6 +133,7 @@ const content = [
     ],
   },
   {
+    url: "/Governance",
     mainHead: "Governance",
     subContent: [
       {
@@ -146,6 +154,7 @@ const content = [
     ],
   },
   {
+    url: "/Gnosis",
     mainHead: "Gnosis",
     subContent: [
       {
@@ -166,6 +175,7 @@ const content = [
     ],
   },
   {
+    url: "/Token",
     mainHead: "ZRC Token",
     subContent: [
       {
@@ -181,6 +191,7 @@ const content = [
     ],
   },
   {
+    url: "/ZRC-20",
     mainHead: "ZRC-20",
     subContent: [
       {
@@ -206,6 +217,7 @@ const content = [
     ],
   },
   {
+    url: "/ZRC-721",
     mainHead: "ZRC-721",
     subContent: [
       {
@@ -231,6 +243,7 @@ const content = [
     ],
   },
   {
+    url: "/Contract",
     mainHead: "Smart Contract",
     subContent: [
       {

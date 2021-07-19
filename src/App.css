@@ -9,7 +9,7 @@
   color: gray;
 }
 .active {
-  color: #1da6da;
+  color: #1da6da !important;
 }
 .active:hover {
   color: #1da6da;

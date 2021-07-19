@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../Styles/Navigator.scss";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import U2 from "./Subcomponents/U2";
+import Intro from "./Subcomponents/Pages/Intro";
 
 class Navigator extends Component {
   state = {
@@ -43,13 +45,17 @@ class Navigator extends Component {
         <h2>Zenith Chain</h2>
         <ul className="navigator-mainui">
           <li>
-            <span
-              onClick={this.handleChange}
-              className={
-                page === "Introduction" ? "active dropless" : "dropless"
-              }
-            >
-              Introduction
+            <span onClick={this.handleChange}>
+              <Link
+                className={
+                  page === "Introduction"
+                    ? "active dropless linke"
+                    : "dropless linke"
+                }
+                to="/Introduction"
+              >
+                Introduction
+              </Link>
             </span>
           </li>
           <li>
@@ -69,47 +75,67 @@ class Navigator extends Component {
             </div>
             {this.state.u2 ? (
               <ul id="ul-2">
-                <li
-                  className={page === "Consensus" ? "active " : null}
-                  onClick={this.handleChange}
-                >
-                  Consensus
+                <li onClick={this.handleChange}>
+                  <Link
+                    className={page === "Consensus" ? "active linke" : "linke"}
+                    to="/Consensus"
+                  >
+                    Consensus
+                  </Link>
                 </li>
-                <li
-                  className={page === "Overview" ? "active " : null}
-                  onClick={this.handleChange}
-                >
-                  Overview
+                <li onClick={this.handleChange}>
+                  <Link
+                    className={page === "Overview" ? "active linke" : "linke"}
+                    to="/Overview"
+                  >
+                    Overview
+                  </Link>
                 </li>
-                <li
-                  className={page === "Genesis File" ? "active " : null}
-                  onClick={this.handleChange}
-                >
-                  Genesis File
+                <li onClick={this.handleChange}>
+                  <Link
+                    className={
+                      page === "Genesis File" ? "active linke" : "linke"
+                    }
+                    to="/Genesis"
+                  >
+                    Genesis File
+                  </Link>
                 </li>
-                <li
-                  className={page === "Governance" ? "active " : null}
-                  onClick={this.handleChange}
-                >
-                  Governance
+                <li onClick={this.handleChange}>
+                  <Link
+                    className={page === "Governance" ? "active linke" : "linke"}
+                    to="/Governance"
+                  >
+                    Governance
+                  </Link>
                 </li>
               </ul>
             ) : null}
           </li>
           <li>
-            <span
-              className={page === "Ecosystem" ? "active dropless" : "dropless"}
-              onClick={this.handleChange}
-            >
-              Ecosystem
+            <span onClick={this.handleChange}>
+              <Link
+                className={
+                  page === "Ecosystem"
+                    ? "active linke dropless"
+                    : "linke dropless"
+                }
+                to="/Ecosystem"
+              >
+                Ecosystem
+              </Link>
             </span>
           </li>
           <li>
-            <span
-              className={page === "Gnosis" ? "active dropless" : "dropless"}
-              onClick={this.handleChange}
-            >
-              Gnosis
+            <span onClick={this.handleChange}>
+              <Link
+                className={
+                  page === "Gnosis" ? "active linke dropless" : "linke dropless"
+                }
+                to="/Gnosis"
+              >
+                Gnosis
+              </Link>
             </span>
           </li>
 
@@ -135,11 +161,13 @@ class Navigator extends Component {
             </div>
             {this.state.u8 ? (
               <ul id="ul-8">
-                <li
-                  className={page === "ZcScan" ? "active " : null}
-                  onClick={this.handleChange}
-                >
-                  ZcScan
+                <li onClick={this.handleChange}>
+                  <Link
+                    className={page === "ZcScan" ? "active linke " : "linke "}
+                    to="/ZcScan"
+                  >
+                    ZcScan
+                  </Link>
                 </li>
               </ul>
             ) : null}
@@ -163,11 +191,13 @@ class Navigator extends Component {
             </div>
             {this.state.u9 ? (
               <ul id="ul-9">
-                <li
-                  className={page === "ZcScan" ? "active " : null}
-                  onClick={this.handleChange}
-                >
-                  ZcScan
+                <li onClick={this.handleChange}>
+                  <Link
+                    className={page === "ZcScan" ? "active linke " : "linke "}
+                    to="/ZcScan"
+                  >
+                    ZcScan
+                  </Link>
                 </li>
               </ul>
             ) : null}
@@ -196,35 +226,50 @@ class Navigator extends Component {
             </div>
             {this.state.u10 ? (
               <ul id="ul-10">
-                <li
-                  className={page === "ZRC Token" ? "active " : null}
-                  onClick={this.handleChange}
-                >
-                  ZRC Token
+                <li onClick={this.handleChange}>
+                  <Link
+                    className={
+                      page === "ZRC Token" ? "active linke " : "linke "
+                    }
+                    to="/Token"
+                  >
+                    ZRC Token
+                  </Link>
                 </li>
-                <li
-                  className={page === "ZRC-20" ? "active " : null}
-                  onClick={this.handleChange}
-                >
-                  ZRC-20
+                <li onClick={this.handleChange}>
+                  <Link
+                    className={page === "ZRC-20" ? "active linke " : "linke "}
+                    to="/ZRC-20"
+                  >
+                    ZRC-20
+                  </Link>
                 </li>
                 <li
                   className={page === "ZRC-721" ? "active " : null}
                   onClick={this.handleChange}
                 >
-                  ZRC-721
+                  <Link
+                    className={page === "ZRC-721" ? "active linke " : "linke "}
+                    to="/ZRC-721"
+                  >
+                    ZRC-721
+                  </Link>
                 </li>
               </ul>
             ) : null}
           </li>
           <li>
-            <span
-              className={
-                page === "Smart Contract" ? "active dropless" : "dropless"
-              }
-              onClick={this.handleChange}
-            >
-              Smart Contract
+            <span onClick={this.handleChange}>
+              <Link
+                className={
+                  page === "Smart Contract"
+                    ? "active linke dropless"
+                    : "linke dropless"
+                }
+                to="/Contract"
+              >
+                Smart Contract
+              </Link>
             </span>
           </li>
           <li>
@@ -232,7 +277,12 @@ class Navigator extends Component {
               className={page === "Wallet" ? "active dropless" : "dropless"}
               onClick={this.handleChange}
             >
-              Wallet
+              <Link
+                className={page === "Wallet" ? "active linke " : "linke "}
+                to="/Wallet"
+              >
+                Wallet
+              </Link>
             </span>
           </li>
         </ul>
