@@ -15,6 +15,7 @@ import ERC20 from "./Components/Subcomponents/Pages/ERC20";
 import ERC721 from "./Components/Subcomponents/Pages/ERC721";
 import SmartContract from "./Components/Subcomponents/Pages/SmartContract";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Wallet from "./Components/Subcomponents/Pages/Wallet";
 
 class App extends Component {
   state = {
@@ -45,7 +46,7 @@ class App extends Component {
               <Route path="/ZRC-20" component={ERC20}></Route>
               <Route path="/ZRC-721" component={ERC721}></Route>
               <Route path="/Contract" component={SmartContract}></Route>
-              <Route path="/Wallet" component={ComingSoon}></Route>
+              <Route path="/Wallet" component={Wallet}></Route>
             </div>
           </Switch>
         </Router>

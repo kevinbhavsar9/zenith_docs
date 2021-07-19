@@ -13,6 +13,7 @@ class Navigator extends Component {
     u8: false,
     u9: false,
     u10: false,
+    // u11: false,
   };
   dropDown1 = () => {
     // console.log(id);
@@ -34,6 +35,10 @@ class Navigator extends Component {
     // console.log(id);
     this.setState({ u9: !this.state.u9 });
   };
+  // dropDown6 = () => {
+  //   // console.log(id);
+  //   this.setState({ u11: !this.state.u11 });
+  // };
   handleChange = (e) => {
     const { changeState } = this.props;
     changeState(e.target.innerText);
@@ -112,7 +117,7 @@ class Navigator extends Component {
               </ul>
             ) : null}
           </li>
-          <li>
+          {/* <li>
             <span onClick={this.handleChange}>
               <Link
                 className={
@@ -125,7 +130,7 @@ class Navigator extends Component {
                 Ecosystem
               </Link>
             </span>
-          </li>
+          </li> */}
           <li>
             <span onClick={this.handleChange}>
               <Link
@@ -285,6 +290,41 @@ class Navigator extends Component {
               </Link>
             </span>
           </li>
+          {/* <li>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              {this.state.u11 ? (
+                <ExpandMoreIcon
+                  onClick={this.dropDown6}
+                  style={{ fontSize: 15, paddingRight: 4 }}
+                />
+              ) : (
+                <ArrowForwardIosIcon
+                  onClick={this.dropDown6}
+                  style={{ fontSize: 10, paddingRight: 10 }}
+                />
+              )}
+              <span
+                className={page === "Wallet" ? "active " : null}
+                onClick={this.dropDown6}
+              >
+                Wallet
+              </span>
+            </div>
+            {this.state.u11 ? (
+              <ul id="ul-11">
+                <li onClick={this.handleChange}>
+                  <Link
+                    className={
+                      page === "ZRC Token" ? "active linke " : "linke "
+                    }
+                    to="/Token"
+                  >
+                    ZRC Token
+                  </Link>
+                </li>
+              </ul>
+            ) : null}
+          </li> */}
         </ul>
       </div>
     );

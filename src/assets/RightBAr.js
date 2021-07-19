@@ -16,8 +16,13 @@ const content = [
     mainHead: "Wallet",
     subContent: [
       {
-        subHead: "Zenith Wallet",
-        // ida: "#Intro",
+        subHead: "Connecting MetaMask to Zenith Chian",
+        ida: "#Connect",
+        subTopic: [],
+      },
+      {
+        subHead: "Configuring the wallet",
+        ida: "#config",
         subTopic: [],
       },
     ],
