@@ -1,21 +1,21 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../../Styles/Content.scss";
-import Intro from "./Pages/Intro";
-import Overview from "./Pages/Overview";
-import Governance from "./Pages/Governance";
-import Genesis from "./Pages/Genesis";
-import Gnosis from "./Pages/Gnosis";
-import Consensus from "./Pages/Consensus";
-import ComingSoon from "./Pages/Coming";
-import ZrcToken from "./Pages/ZrcToken";
-import ERC20 from "./Pages/ERC20";
-import ERC721 from "./Pages/ERC721";
-import SmartContract from "./Pages/SmartContract";
-import App from "../../App";
+// import Intro from "./Pages/Intro";
+// import Overview from "./Pages/Overview";
+// import Governance from "./Pages/Governance";
+// import Genesis from "./Pages/Genesis";
+// import Gnosis from "./Pages/Gnosis";
+// import Consensus from "./Pages/Consensus";
+// import ComingSoon from "./Pages/Coming";
+// import ZrcToken from "./Pages/ZrcToken";
+// import ERC20 from "./Pages/ERC20";
+// import ERC721 from "./Pages/ERC721";
+// import SmartContract from "./Pages/SmartContract";
+// import App from "../../App";
 class Content extends Component {
   render() {
-    const { page } = this.props;
+    // const { page } = this.props;
     // console.log(page);
     return (
       <></>

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../Styles/Navigator.scss";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import U2 from "./Subcomponents/U2";
-import Intro from "./Subcomponents/Pages/Intro";
+// import U2 from "./Subcomponents/U2";
+// import Intro from "./Subcomponesnts/Pages/Intro";
 
 class Navigator extends Component {
   state = {
@@ -147,7 +147,7 @@ class Navigator extends Component {
           {/* <li>
             <span className="dropless">Cross Chain Apps</span>
           </li> */}
-          <li>
+          {/* <li>
             <div style={{ display: "flex", alignItems: "center" }}>
               {this.state.u8 ? (
                 <ExpandMoreIcon
@@ -176,8 +176,8 @@ class Navigator extends Component {
                 </li>
               </ul>
             ) : null}
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <div style={{ display: "flex", alignItems: "center" }}>
               {this.state.u9 ? (
                 <ExpandMoreIcon
@@ -206,6 +206,48 @@ class Navigator extends Component {
                 </li>
               </ul>
             ) : null}
+          </li> */}
+          <li>
+            <span
+              className={
+                page === "Zenith Chain Mainnet Explorer"
+                  ? "active dropless"
+                  : "dropless"
+              }
+              onClick={this.handleChange}
+            >
+              <Link
+                className={
+                  page === "Zenith Chain Mainnet Explorer"
+                    ? "active linke "
+                    : "linke "
+                }
+                to="/Mainnet"
+              >
+                Zenith Chain Mainnet Explorer
+              </Link>
+            </span>
+          </li>
+          <li>
+            <span
+              className={
+                page === "Zenith Chain Testnet Explorer"
+                  ? "active dropless"
+                  : "dropless"
+              }
+              onClick={this.handleChange}
+            >
+              <Link
+                className={
+                  page === "Zenith Chain Testnet Explorer"
+                    ? "active linke "
+                    : "linke "
+                }
+                to="/Testnet"
+              >
+                Zenith Chain Testnet Explorer
+              </Link>
+            </span>
           </li>
           <li>
             <div style={{ display: "flex", alignItems: "center" }}>

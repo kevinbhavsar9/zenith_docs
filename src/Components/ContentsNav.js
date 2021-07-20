@@ -4,14 +4,14 @@ import Array from "../assets/RightBAr";
 
 class ContentsNav extends Component {
   render() {
-    // console.log(content);
-    const { page } = this.props;
     let content = Array.filter((item) => {
       if (item.url === window.location.pathname) {
+        // console.log(item);
         return item;
       }
     });
-    console.log(content);
+    // console.log(content);
+    console.log("a");
     return (
       <div className="right-nav-cont px-2">
         <h3 className="content">{content[0].mainHead}</h3>

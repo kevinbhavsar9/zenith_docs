@@ -79,11 +79,27 @@ const content = [
     ],
   },
   {
-    url: "/ZcScan",
-    mainHead: "ZcScan",
+    url: "/Testnet",
+    mainHead: "Zenith Chain Testnet Explorer",
     subContent: [
       {
-        subHead: "Zenith Chain Scan",
+        subHead: "Zenith Testnet",
+        ida: "#testnet",
+        subTopic: [],
+      },
+      {
+        subHead: "Making Transactions",
+        ida: "#trans",
+        subTopic: [],
+      },
+    ],
+  },
+  {
+    url: "/Mainnet",
+    mainHead: "Zenith Chain Mainnet Explorer",
+    subContent: [
+      {
+        subHead: "Zenith Mainnet",
         // ida: "#Intro",
         subTopic: [],
       },
@@ -276,6 +292,18 @@ const content = [
         ida: "#Limitations",
         subTopic: [],
       },
+    ],
+  },
+  {
+    url: "/",
+    mainHead: "Introduction",
+    subContent: [
+      {
+        subHead: "Introduction of Zenith Smart Chian",
+        ida: "#Intro",
+        subTopic: [],
+      },
+      { subHead: "Resources", ida: "#Resources", subTopic: [] },
     ],
   },
 ];
