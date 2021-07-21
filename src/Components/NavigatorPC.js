@@ -41,9 +41,8 @@ class Navigator extends Component {
   //   this.setState({ u11: !this.state.u11 });
   // };
   handleChange = (e) => {
-    const { changeState, changeNavState } = this.props;
+    const { changeState } = this.props;
     changeState(e.target.innerText);
-    changeNavState(false);
   };
   handleCloseBtn = () => {
     const { changeNavState } = this.props;
@@ -54,10 +53,6 @@ class Navigator extends Component {
     return (
       <div id="navigator" className="nav-cont">
         <div id="nav-head">
-          <CloseIcon
-            onClick={this.handleCloseBtn}
-            style={{ color: "#1da6da" }}
-          />
           <h2>Zenith Chain</h2>
         </div>
         <ul className="navigator-mainui">

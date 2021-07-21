@@ -13,7 +13,7 @@ class ContentsNav extends Component {
     // console.log(content);
     console.log("a");
     return (
-      <div className="right-nav-cont px-2">
+      <div id="contentNav" className="right-nav-cont px-2">
         <h3 className="content">{content[0].mainHead}</h3>
         <ul className="top-ul">
           {content[0].subContent.map((item) => (
